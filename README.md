@@ -39,6 +39,7 @@ Después se pueden importar paneles. Desde la máquina anfitriona (que es donde 
 Ejecutar "docker compose down"
 
 ## Prueba del API
+```
 curl http://localhost:5000
 "Accessing root"
 curl -X GET http://localhost:5000/data
@@ -47,3 +48,4 @@ curl -X POST -d '{"data": "algodeinfo"}' -H "Content-Type: application/json" htt
 "Added record: algodeinfo"
 curl -X DELETE localhost:5000/data/4
 "Deleting record 4"
+```
