@@ -5,6 +5,6 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 ENV FLASK_APP /app/server.py
 
-CMD flask --app /app/server.py run --host=0.0.0.0 --port=5000
+CMD python server.py
 
 EXPOSE 5000

@@ -4,9 +4,10 @@ services:
   flask-api:
     build:
       context: ./api
+    volumes:
+      - ./api:/app 
     restart: unless-stopped
-    container_name: flask-api
-    image: example-flask-api
+    command: python server.py
     ports:
       - "5000:5000"
 
