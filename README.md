@@ -23,9 +23,9 @@ Lanza un contenedor Grafana. La configuración del contenedor está en ./monitor
 
 Las credenciales de acceso son admin/pass@123
 
-En las fuentes de datos, se debe añadir una llamada exactamente "Prometheus" (con la P mayúscula), de tipo Prometheus. El URL de acceso será http://example-prometheus:9090.
+En las fuentes de datos, se debe añadir una de tipo Prometheus, que por omisión se llamará "prometheus". Solo es necesario configurar el URL de acceso, que es http://example-prometheus:9090.
 
-Después se pueden importar paneles. Desde la máquina anfitriona (que es donde se ejecuta el navegador) podemos añadir el panel que está en ./monitoring/grafana_dashboard.json. También se puede copiar y pegar en el recuadro correspondiente de Grafana
+Después se pueden importar paneles. Desde la máquina anfitriona (que es donde se ejecuta el navegador) podemos añadir el panel que está en ./monitoring/flaskapp_dashboard.json. También se puede copiar y pegar en el recuadro correspondiente de Grafana. Usará la fuente de datos configurada en el paso anterior. 
 
 ## Puesta en marcha, paso a paso
 
